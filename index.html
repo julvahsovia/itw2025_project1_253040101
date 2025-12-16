@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Portofolio</title>
+     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Julvah Dwi Sovia</a>
+        <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+        </nav>
+        <div class="humburger"> 
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div>
+            <h1>Hi, I'm <span>Julvah Dwi Sovia</span></h1>
+            <p>Mahasiswa Teknik Informatika di Universitas Paundan dengan minat dalam teknologi dan pemograman.</p>
+            <div class="social-icos">
+                <a href="#"><i class="bx bxl-github"></i></a>
+                <a href="#"><i class="bx bxl-linstagram"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+            </div>
+            <div>
+                <a href="#" class="btn">Hire</a>
+                <a href="#" class="btn">Contact</a>
+            </div>
+        </div>
+
+
+    </section>
+    
+    <section id="education">
+        <div class="timeline">
+            <h2>Education</h2>
+            <div>2012 - SDN 1 CILADAEUN</div>
+            <div>2018 - SMPN 1 GREEN SCHOOL</div>
+            <div>2021 - SMAN 2 RANGKASBITUNG</div>
+            <div>2024 - Universitas Pasundan</div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="services">
+            <h2 class="h2">services</h2>
+            <div>
+                <h4>Web Designer</h4>
+                <p>Merancang web yang menarik dan responsif.</p>
+            </div>
+            <div>
+                <h4>Web Developer</h4>
+                <p>Membangun website fungsional dan dinamis</p>
+            </div> 
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="skills">
+                <h2 class="h3">skills</h2>
+                <div>
+                    <h4>HTML</h4>
+                    <p>Penguasaan markup untuk struktur web.</p>
+                </div>
+                <div>
+                    <h4>CSS</h4>
+                    <P>Gaya dan tata letak responsif</P>
+                </div>
+                <div>
+                    <h4>JavaScript</h4>
+                    <p>Interaktivitas pada web</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contac Me<action="">
+            <form>
+                <input type="text" placeholder="full Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="sumbit" class="btn">Send Message</button>
+            </form>
+        </section>
+
+        <footer>
+            <div class="social">
+                <a href="#"><i class="bx bxl-github"></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+                <a href="#"><i class="bx bxl-twiteer"></i></a>
+
+            </div>
+            <p>&copy; 2025 JulvahDwiSovia. All rights reserved.</p>
+        </footer>
+        <script>
+            const humburger = document. querySeloctor('.humburger');
+            const navbar = documen.querySelector('.navbar');
+
+            hamburger.addEventistener('click',() => {
+                hamburger.classList.toggle('active');
+                navbar.classList.toggle('active');
+            });
+        </script>     
+</body>
+</html>

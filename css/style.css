@@ -1,0 +1,663 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #222;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .navbar a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 1rem;
+    font-weight: 400;
+}
+
+.header .navbar a.active,
+.header .navbar a:hover {
+    color: #f4a261;
+}
+/* Hamburger Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Navbar Hiddeng (Mobile View) */
+.navbar {
+    display: flex;
+   gap: 1rem;
+}
+
+.navbar.active {
+    display: flex;
+
+}
+
+.navbar.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    background-color: #222;
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 999;
+}
+
+.navbar a {
+    margin: 0.5rem 0;
+}
+
+/* Hamburger Animation When Active */
+.navbar.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.navbar.active span:nth-child(2) {
+   opacity: 0;
+}
+
+.navbar.active span:nth-child(3) {
+     transform: rotate(-45deg) translateY(-8PX);
+
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-items: center;
+    padding: 3rem 2rem;
+    background-color: #f4f4f4;
+    height: 800px;
+}
+
+.home img {
+    width: 2000px;
+    border-radius: 20px;
+}
+.home h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.home h1 span{
+    color: #ff6347;
+}
+
+.home p{
+    margin-bottom: 1.5rem;
+}
+
+.home .social-icons a{
+    text-decoration: none;
+    margin-right: 1rem;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.home .social-icons a:hover{
+    color: #ff6347;
+}
+
+.home .btn{
+    padding: 0.5rem 1.5rem;
+    background-color: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+}
+
+.home .btn:hover{
+    background-color: #e5533f;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2rem;
+    color: #222;
+}
+
+/* Education Section */
+#education {
+   height: 800px;
+   display: grid;
+   align-items: center;
+    background-color: #ff6347;
+    justify-content: center;
+}
+
+#education .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px;
+}
+
+/* Experience Section */
+#experience {
+    height: 800px;
+    display: grid;
+    align-items: center;
+    padding-top: 3rem;
+
+}
+
+#services h2 {
+    text-align: center;
+    margin-bottom: 2rem; /* Tambah jarak bawah */
+    position: static; /* Hapus efek posisi absolute kalau ada */
+}
+
+.h2 {
+    text-align: center;
+    margin-bottom: 2rem; /* Tambah jarak baawah */
+    position: static; /* Hapus efek posisi absolute kalau ada */
+}
+
+.h2 {
+    position: relative;
+    top: auto;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.services div {
+    text-align: center;
+    max-width: 300px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow:0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.services h4 {
+    color: #ff6347;
+    margin-bottom: 0.5rem;
+}
+
+/* Skills Section */
+#skills {
+    height: 800px;
+    background-color: #ff6347;
+    display: grid;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.skills h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: static;
+}
+
+.h3 {
+    position: relative;
+    top: auto;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.skills div {
+    text-align: center;
+    max-width: 300px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow:0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.skills h4 {
+    color: #ff6347;
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Section */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+    padding: 1rem;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact form button {
+    padding: 0.5rem 1rem;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact form button:hover {
+    background-color: #e5533f;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: #fff;
+}
+
+footer .social a{
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+footer .social a:hover {
+    color: #ff6347;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home img {
+        max-width: 50%;
+        margin: 1rem 0;
+    }
+
+    #education .timeline {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .services,
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+     .header {
+        padding: 1rem;
+    }   
+
+    .header .logo {
+        font-size: 1.2rem;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+    }
+
+    .home p {
+        font-size: 1rem;
+    }
+
+    .home .btn {
+        padding: 0.5rem 1rem;
+    }
+
+    #education .timeline {
+        font-size: 0.9rem;
+    }
+
+    .services div,
+    .skills div {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    #services h2 {
+        margin-bottom: 1rem; /* kurangi jarak kalau terlalu lebar */
+    }
+
+    .services div {
+        margin: 1rem auto; /* pastikan card posisinya center */
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .humburger {
+        display: flex;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 0.5rem;
+    }
+
+    .header .navbar a {
+        font-size: 0.9rem;
+    }
+
+    .header .navbar a {
+        font-size: 0.9rem;
+    }
+
+    .home h1 {
+        font-size: 1.5rem;
+    }
+
+    .home img{
+        max-width: 70%;
+    }
+
+    .home p{
+        font-size: 0.9rem;
+}
+
+.home .btn {
+    font-size: 0.9rem;
+    pandding: 0.5rem;
+}
+
+#contact form input,
+#contact form textarea {
+    padding: 0.4rem
+}
+
+footer {
+    font-size: 0.9rem;
+}
+
+footer .social a {
+    font-size: 1.2rem;
+}
+
+
+.services div, .skills div {
+    flex: 1 1 100%;
+    max-width: none;
+}
+
+
+.h3 {    position: relative;
+    top: auto;
+}
+.h3 {
+    position: relative;
+    top: auto;
+}
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+.skills div {
+    text-align: center;
+    max-width: 200px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow:0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.skills h4 {
+    color: #ff6347;
+    margin-bottom: 0.5rem;
+}
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 1rem;
+    padding: 1rem;
+}
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#contact form button {
+    padding: 0.5rem 1.5rem;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#contact form button:hover {
+    background-color: #e5533f;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: #fff;
+}
+footer .social a{
+    margin: 0 0.5rem;
+    color: #fff;
+    font-size: 1.5rem;
+}
+footer .social a:hover {
+    color: #ff6347;
+}
+@media (max-width: 768px) {
+     .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home img {
+        max-width: 50%;
+        margin: 1rem 0;
+    }
+
+    #education .timeline {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .services,
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        overflow: hidden;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem;
+    }
+
+    .header .logo {
+        font-size: 1.2rem;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+    }
+
+    .home p {
+        font-size: 1rem;
+    }
+
+    .home .btn {
+        padding: 0.5rem 1rem;
+    }
+
+    #education .timeline {
+        font-size: 0.9rem;
+    }
+
+    .services div,
+    .skills div {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    #services h2 {
+        margin-bottom: 1rem; /* Kurangi jarak kalau terlalu lebar */
+    }
+
+    .services div {
+        margin: 1rem auto; /* Pastikan card posisinya center */
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 0.5rem;
+    }
+
+    .header .navbar a {
+        font-size: 0.9rem;
+    }
+
+    .home h1 {
+        font-size: 1.5rem;
+    }
+
+    .home img {
+        max-width: 70%;
+    }
+
+    .home p {
+        font-size: 0.9rem;
+    }
+
+    .home .btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 1rem;
+    }
+
+    #education .timeline {
+        padding: 0.5rem;
+    }
+
+    #contact form {
+        width: 90%;
+        padding: 0.5rem;
+    }
+
+    #contact form input,
+    #contact form textarea {
+        padding: 0.4rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+
+    footer .social a {
+        font-size: 1.2rem;
+    }
+
+    .services div, .skills div {
+        flex: 1 1 100%;
+        max-width: none;
+    }
+}
